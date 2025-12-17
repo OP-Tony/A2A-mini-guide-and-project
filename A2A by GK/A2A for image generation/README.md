@@ -71,4 +71,9 @@ For further assistance, please raise an [Issue](https://github.com/OP-Tony/A2A-m
 
 ---
 
+While doing it you'll get an user interface like this or similar to this for the streamlit code
+**Sample output may look like**
+<img width="531" height="445" alt="image" src="https://github.com/user-attachments/assets/ef3ebdfd-f1e2-4706-a57f-f9cd4bb46029" />
+
+---
 Thank you for using `A2A for Image Generation`!
