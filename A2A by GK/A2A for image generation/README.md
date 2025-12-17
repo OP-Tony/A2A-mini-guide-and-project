@@ -1,30 +1,74 @@
-# MCP Image Generation Agent
+# A2A for Image Generation
 
-This project implements an AI Agent that connects to a Model Context Protocol (MCP) server to generate images. It features a "Human-in-the-loop" approval process for bulk generation requests.
+Welcome to the `A2A for Image Generation` repository! This guide helps you get set up and use this project effectively.
 
-## Architecture
+---
 
-- **Agent (Client):** A CLI application that accepts user prompts and enforces business logic (Approval > 1 image).
-- **Server:** An MCP-compliant server that exposes image generation capabilities.
+## Installation
+Follow these steps to set up the project on your local machine:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/OP-Tony/A2A-mini-guide-and-project.git
+   ```
+
+2. **Navigate to the Directory**:
+   ```bash
+   cd "A2A by GK/A2A for image generation/"
+   ```
+
+3. **Install Dependencies**:
+   Ensure you have `Python 3.8+` installed. Then, install the required libraries by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Set Up Configuration (Optional)**:
+   - Check configuration files (if any) and update paths/settings as needed.
+
+---
 
 ## Usage
+Learn how to use the features of the project:
 
-1. Install dependencies:
-   ```bash
-   pip install .
-   ```
+1. **Prepare Your Inputs**:
+   - Place your source images in the `inputs/` directory.
+   - Ensure images follow the size and format recommendations listed in the documentation (e.g., PNG, JPEG).
 
-2. Run the CLI Agent:
+2. **Run the Main Script**:
    ```bash
-   mcp-image-agent generate "a futuristic city with flying cars" --count 1
+   python main.py --input inputs/ --output outputs/
    ```
+   - Replace `--input` and `--output` with your desired directories if different from default.
 
-3. Run the MCP server (stdio):
-   ```bash
-   mcp-image-server
-   ```
+3. **Output**:
+   - Generated images will be saved in the `outputs/` directory. Verify the results for accuracy.
 
-4. Run the Streamlit UI:
-   ```bash
-   streamlit run src/mcp_image_agent/web_agent.py
-   ```
+4. **Advanced Options**:
+   - Check the `README` or script help (`python main.py -h`) for customizable flags and options.
+
+---
+
+## Troubleshooting
+Experiencing issues? Here are some common fixes:
+
+1. **Dependencies Not Installing**:
+   - Check if you have the correct Python version installed.
+   - Ensure you have `pip` updated:
+     ```bash
+     python -m pip install --upgrade pip
+     ```
+
+2. **Script Fails to Execute**:
+   - Verify file paths provided for inputs and outputs.
+   - Check logs or error messages for details.
+
+3. **Output Quality Issues**:
+   - Ensure input images meet recommended size and format.
+   - Adjust script parameters (e.g., resolution, filters) as specified in `python main.py -h`.
+
+For further assistance, please raise an [Issue](https://github.com/OP-Tony/A2A-mini-guide-and-project/issues) on the GitHub repository.
+
+---
+
+Thank you for using `A2A for Image Generation`!
