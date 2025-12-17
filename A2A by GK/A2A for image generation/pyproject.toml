@@ -1,0 +1,23 @@
+[project]
+name = "mcp-image-agent"
+version = "0.1.0"
+description = "An MCP-based Image Generation Agent with approval workflows"
+dependencies = [
+    "mcp",
+    "typer",
+    "rich",
+    "Pillow",
+    "streamlit"
+]
+requires-python = ">=3.10"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_image_agent"]
+
+[project.scripts]
+mcp-image-agent = "mcp_image_agent.agent:main"
+mcp-image-server = "mcp_image_agent.server:main"
