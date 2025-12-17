@@ -1,6 +1,7 @@
 # A2A-mini-guide-and-project
 
-Welcome to the **A2A-mini-guide-and-project** repository! This project helps you understand and create A2A (Account to Account) agents seamlessly. Below you'll find comprehensive details about the repository's goals, components, and usage.
+Welcome to the **A2A-mini-guide-and-project** repository! This project helps you understand and create A2A (Agent to Agent) connection seamlessly. Below you'll find comprehensive details about the repository's goals, components, and usage.
+In this repo you'll find **'GK'**, it's nothing but the place I have learned these things, which is **Google x Kaggle 5-Day Bootcamp**.
 
 ---
 
